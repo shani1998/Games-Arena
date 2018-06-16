@@ -1,0 +1,51 @@
+<html lang="em">
+<head>
+<title>Games Arena</title>
+<link rel="shortcut icon" href="favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Font-Awesome Library use for including the font awesome icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Bootstrap 4 Library -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!-- Cloudfare library for sweet alert -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="rated()">
+  <div class="container-grid">
+    <!-- Header --->
+    <div class="row header">
+      <div class="col col-sm-8 col-md-8">
+        <img src="game-arena.png" class="rounded-circle" alt="Cinque Terre" width="204" height="100">
+      </div>
+      <div class="col col-sm-4 col-md-4" style="padding-top: 20px;">
+        <h1 id="hed"><a href="#">Games Arena</a></h1>
+      </div>
+
+    </div>
+    <!-- Search Bar -->
+    <div class="row" style="padding:10px">
+      <div class="input-group col">
+            <input class="form-control " type="search" id="search" onkeyup="getup()"  placeholder="Game Name (SORT BY SCORE) ">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary"  onclick="getup()"type="button">
+                  <i class="fa fa-search"></i>
+              </button>
+            </span>
+      </div>
+    </div>
+  <!-- Display Search Contents -->
+  <div class="row"  id="content" style="padding:30px;">
+  </div>
+  </div>
+  <script src="search.js"></script>
+</body>
+</html>

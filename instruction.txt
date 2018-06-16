@@ -1,0 +1,24 @@
+
+ -----------users instruction------------------------------
+every visitors will be prompted with welcome message first.
+users will be shown top rated 10 games according to scores.
+users will be given an option to search the games.
+search results will be shown as user start typing and they can also submit their typed search text.
+search results will be shown in order of rating i.e most scored search results first and so on.
+
+
+ ----------------files description-------------
+ 
+we have made three files i.e index.html , search.js  and style.css.
+index.html contains codes for user interface.we have used bootstrap 4 for enhancing user interface.
+style.css is a css file for styling the index.html elements.
+search.js is a javascript file .we have used jquery framework with basics javascript for sending and searching the result via ajax.
+ 
+ ------------searching logic--------------------
+ we are searching the entire json data with the user's inputs. we have tried to give the accurate results from 30 to 100 percent with O(n) time complexity.
+ we are then sorting the entire search results based on score using insertion sort.
+ auto suggestion will be shown as user start typing. 
+ 
+ 
+ 
+ 
